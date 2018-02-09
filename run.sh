@@ -6,6 +6,5 @@ docker run -it --rm  \
 
 
 docker run --rm -it  \
-    -v ~/.gradle:/home/gradle/.gradle \
      -v $(pwd)/libimgutils.so:/lib/libimgutils.so \
      -v $(pwd):/home/gradle/project -w /home/gradle/project gradle:latest bash /home/gradle/project/buildjava.sh
