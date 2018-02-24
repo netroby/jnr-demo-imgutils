@@ -1,14 +1,12 @@
 package main
 
 import (
-        "C"
-        _ "image/jpeg"
-        _ "image/png"
+	"C"
 )
 
 //export ImgutilGetImageSize
 func ImgutilGetImageSize() *C.char {
-        return C.CString("hello from golang")
+	return C.CString("hello from golang")
 }
 
 func main() {}
